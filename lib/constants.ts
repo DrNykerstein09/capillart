@@ -4,7 +4,8 @@ export const CONTACT_INFO = {
   whatsappMessage: "Hola, me gustaría agendar mi diagnóstico gratuito para trasplante capilar",
   email: "info@capilart.com.mx",
   phone: "+52 55 1234 5678",
-  address: "Ciudad de México, México",
+  address: "C. Querétaro 27, Roma Nte., Cuauhtémoc, 06700, CDMX",
+  googleMapsUrl: "https://maps.app.goo.gl/zSKJ9dhDnkvgTX8M7",
 };
 
 // Servicios principales

@@ -35,11 +35,11 @@ export function Hero() {
             {/* LOGO */}
             <div className="w-full flex justify-center lg:justify-start mb-6">
               <Image
-                src="/CapilArt_Logo_ svg.svg"          // coloca tu SVG en public/logo.svg
+                src="/CapilArt_Logo_ svg.svg" // coloca tu SVG en public/logo.svg
                 alt="CapilArt México"
                 width={240}
                 height={140}
-                priority                // mejora LCP
+                priority // mejora LCP
                 className="h-20 w-auto"
               />
             </div>
@@ -77,8 +77,8 @@ export function Hero() {
               con la experiencia de nuestros especialistas para lograr injertos
               capilares exactos, rápidos y mínimamente invasivos. Nuestro
               enfoque une innovación médica y atención personalizada,
-              garantizando resultados naturales y un proceso
-              seguro en cada etapa.
+              garantizando resultados naturales y un proceso seguro en cada
+              etapa.
             </p>
 
             {/* Benefits */}
@@ -101,7 +101,10 @@ export function Hero() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Button
                   size="lg"
                   className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -114,7 +117,10 @@ export function Hero() {
                 </Button>
               </motion.div>
 
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Button
                   size="lg"
                   variant="outline"
@@ -134,50 +140,15 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-secondary/20 to-accent/20 p-1">
-              <div className="bg-white rounded-xl p-8">
-                {/* Placeholder for ARTAS Robot Image or 3D Model */}
-                <div className="aspect-square bg-gradient-to-br from-muted to-secondary/10 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 bg-accent/20 rounded-full flex items-center justify-center">
-                      <svg
-                        className="w-20 h-20 text-accent"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={1.5}
-                          d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-                        />
-                      </svg>
-                    </div>
-                    <p className="text-primary font-bold text-xl mb-2">
-                      Robot ARTAS IX
-                    </p>
-                    <p className="text-muted-foreground text-sm">
-                      Sistema Robótico Autónomo
-                    </p>
-                  </div>
-                </div>
-
-                {/* Stats */}
-                <div className="grid grid-cols-3 gap-4 mt-8">
-                  <motion.div className="text-center" whileHover={{ y: -5 }}>
-                    <div className="text-3xl font-bold text-accent">99%</div>
-                    <div className="text-xs text-muted-foreground">Efectividad</div>
-                  </motion.div>
-                  <motion.div className="text-center" whileHover={{ y: -5 }}>
-                    <div className="text-3xl font-bold text-accent">3x</div>
-                    <div className="text-xs text-muted-foreground">Más Rápido</div>
-                  </motion.div>
-                  <motion.div className="text-center" whileHover={{ y: -5 }}>
-                    <div className="text-3xl font-bold text-accent">24h</div>
-                    <div className="text-xs text-muted-foreground">Recuperación</div>
-                  </motion.div>
-                </div>
+            <div className="aspect-square bg-gradient-to-br from-muted to-secondary/10 rounded-xl flex items-center justify-center">
+              <div className="w-full h-full relative rounded-xl overflow-hidden">
+                <Image
+                  src="/WhatsApp Image 2025-11-04 at 06.30.50_6dd622c6.jpg"
+                  alt="Robot ARTAS iX"
+                  fill
+                  className="object-cover rounded-xl"
+                  priority
+                />
               </div>
             </div>
 

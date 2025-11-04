@@ -101,7 +101,7 @@ export default function ContactPage() {
       `Hola, mi nombre es ${formData.name || '[Tu nombre]'}. Me gustaría agendar mi diagnóstico gratuito para trasplante capilar.`
     );
     const phone = CONTACT_INFO.whatsapp.replace(/\s+/g, "");
-    window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+    window.open(`https://wa.me/5215520933088?text=${message}`, "_blank");
   };
 
   return (

@@ -350,10 +350,7 @@ export default function ServicesPage() {
                     Acompañamiento continuo con revisiones periódicas, tratamientos de mantenimiento 
                     y recomendaciones personalizadas para garantizar resultados duraderos.
                   </p>
-                  <Button variant="outline" className="border-2 border-secondary hover:bg-secondary hover:text-white">
-                    Conocer más
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
+                  
                 </div>
               </motion.div>
             </TabsContent>

@@ -55,8 +55,8 @@ const clinicInfo = {
   googleMapsUrl: "https://maps.app.goo.gl/zSKJ9dhDnkvgTX8M7",
   embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7669999999996!2d-99.16799999999999!3d19.423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3ad3b3e3b3%3A0x123456789!2sC.%20Quer%C3%A9taro%2027%2C%20Roma%20Nte.%2C%20Cuauht%C3%A9moc%2C%2006700%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1234567890",
   hours: [
-    { day: "Lunes - Viernes", time: "9:00 AM - 7:00 PM" },
-    { day: "Sábado", time: "9:00 AM - 2:00 PM" },
+    { day: "Lunes - Viernes", time: "7:00 PM - 9:00 PM" },
+    { day: "Sábado", time: "2:00 PM - 6:00 PM" },
     { day: "Domingo", time: "Cerrado" },
   ]
 };

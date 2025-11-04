@@ -14,11 +14,6 @@ const services = [
     highlight: true,
   },
   {
-    icon: Scissors,
-    title: "FUE Manual",
-    description: "Técnica tradicional con control manual completo para casos específicos.",
-  },
-  {
     icon: Syringe,
     title: "Terapias Regenerativas",
     description: "Células madre, PRP y exosomas para potenciar resultados.",

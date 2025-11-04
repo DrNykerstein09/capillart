@@ -1,9 +1,9 @@
 // Información de contacto
 export const CONTACT_INFO = {
-  whatsapp: "+52 55 1234 5678", // Número de WhatsApp (actualizar con el real)
+  whatsapp: "5215520923088", // Número de WhatsApp (actualizar con el real)
   whatsappMessage: "Hola, me gustaría agendar mi diagnóstico gratuito para trasplante capilar",
-  email: "info@capilart.com.mx",
-  phone: "+52 55 1234 5678",
+  email: "contacto@capilart.com.mx",
+  phone: "+52 55 2092 3088",
   address: "C. Querétaro 27, Roma Nte., Cuauhtémoc, 06700, CDMX",
   googleMapsUrl: "https://maps.app.goo.gl/zSKJ9dhDnkvgTX8M7",
 };
@@ -54,7 +54,7 @@ export const SERVICES = {
         description: "Plasma Rico en Plaquetas para potenciar regeneración",
       },
       {
-        id: "exosomas",
+        id: "exosomas", 
         title: "Exosomas",
         description: "Vesículas extracelulares para regenerar y revitalizar folículos",
       },

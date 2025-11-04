@@ -17,7 +17,6 @@ import {
 
 const footerLinks = {
   servicios: [
-    { name: "FUE Manual", href: "/servicios#fue-manual" },
     { name: "FUE Robótica", href: "/servicios#fue-robotica" },
     { name: "Implantación DHI", href: "/servicios#dhi" },
     { name: "Células Madre", href: "/servicios#celulas-madre" },
@@ -84,7 +83,7 @@ export function Footer() {
             {/* Social Links */}
             <div className="flex gap-4">
               <motion.a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61583446914067"
                 whileHover={{ scale: 1.1 }}
                 className="w-10 h-10 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center transition-colors"
               >

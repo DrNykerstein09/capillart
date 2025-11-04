@@ -9,14 +9,14 @@ import Image from "next/image";
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 }
+  transition: { duration: 0.6 },
 };
 
 const benefits = [
   "99% de efectividad garantizada",
   "Robot ARTAS IX última generación",
   "Diagnóstico con IA gratuito",
-  "Equipo con 20+ años de experiencia"
+  "Equipo con 20+ años de experiencia",
 ];
 
 export function Hero() {
@@ -32,20 +32,34 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <motion.div {...fadeInUp}>
+            {/* LOGO */}
+            <div className="w-full flex justify-center lg:justify-start mb-6">
+              <Image
+                src="/CapilArt_Logo_ svg.svg"          // coloca tu SVG en public/logo.svg
+                alt="CapilArt México"
+                width={240}
+                height={140}
+                priority                // mejora LCP
+                className="h-20 w-auto"
+              />
+            </div>
+
             {/* Badge */}
-            <motion.div 
+            <motion.div
               className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full mb-6"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring" }}
             >
               <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-semibold">Tecnología Robótica de Última Generación</span>
+              <span className="text-sm font-semibold">
+                Tecnología Robótica de Última Generación
+              </span>
             </motion.div>
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
-              Recupera tu confianza con el{" "}
+              CapilArt México con el{" "}
               <span className="text-accent relative">
                 trasplante capilar
                 <motion.div
@@ -59,9 +73,12 @@ export function Hero() {
             </h1>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              CapilArt combina la precisión del Robot ARTAS IX con inteligencia artificial 
-              para ofrecerte resultados naturales y permanentes. Visualiza tu nuevo aspecto 
-              antes del procedimiento con nuestro simulador 3D.
+              En CapilArt combinamos la precisión del sistema robótico ARTAS iX
+              con la experiencia de nuestros especialistas para lograr injertos
+              capilares exactos, rápidos y mínimamente invasivos. Nuestro
+              enfoque une innovación médica y atención personalizada,
+              garantizando resultados naturales y un proceso
+              seguro en cada etapa.
             </p>
 
             {/* Benefits */}
@@ -75,17 +92,16 @@ export function Hero() {
                   transition={{ delay: 0.3 + index * 0.1 }}
                 >
                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-sm font-medium text-foreground">{benefit}</span>
+                  <span className="text-sm font-medium text-foreground">
+                    {benefit}
+                  </span>
                 </motion.div>
               ))}
             </div>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
                   size="lg"
                   className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -97,20 +113,15 @@ export function Hero() {
                   </Link>
                 </Button>
               </motion.div>
-              
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
+
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
                   size="lg"
                   variant="outline"
                   className="border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold px-8 py-4 rounded-full transition-all duration-300"
                   asChild
                 >
-                  <Link href="/proceso">
-                    Conoce el Proceso
-                  </Link>
+                  <Link href="/proceso">Conoce el Proceso</Link>
                 </Button>
               </motion.div>
             </div>
@@ -143,31 +154,26 @@ export function Hero() {
                         />
                       </svg>
                     </div>
-                    <p className="text-primary font-bold text-xl mb-2">Robot ARTAS IX</p>
-                    <p className="text-muted-foreground text-sm">Sistema Robótico Autónomo</p>
+                    <p className="text-primary font-bold text-xl mb-2">
+                      Robot ARTAS IX
+                    </p>
+                    <p className="text-muted-foreground text-sm">
+                      Sistema Robótico Autónomo
+                    </p>
                   </div>
                 </div>
 
                 {/* Stats */}
                 <div className="grid grid-cols-3 gap-4 mt-8">
-                  <motion.div 
-                    className="text-center"
-                    whileHover={{ y: -5 }}
-                  >
+                  <motion.div className="text-center" whileHover={{ y: -5 }}>
                     <div className="text-3xl font-bold text-accent">99%</div>
                     <div className="text-xs text-muted-foreground">Efectividad</div>
                   </motion.div>
-                  <motion.div 
-                    className="text-center"
-                    whileHover={{ y: -5 }}
-                  >
+                  <motion.div className="text-center" whileHover={{ y: -5 }}>
                     <div className="text-3xl font-bold text-accent">3x</div>
                     <div className="text-xs text-muted-foreground">Más Rápido</div>
                   </motion.div>
-                  <motion.div 
-                    className="text-center"
-                    whileHover={{ y: -5 }}
-                  >
+                  <motion.div className="text-center" whileHover={{ y: -5 }}>
                     <div className="text-3xl font-bold text-accent">24h</div>
                     <div className="text-xs text-muted-foreground">Recuperación</div>
                   </motion.div>

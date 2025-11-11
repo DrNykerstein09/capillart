@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* CapilArt Medical Premium Color System */
+    --background: 0 0% 100%;
+    --foreground: 215 59% 19%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 59% 19%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 59% 19%;
+
+    --primary: 215 59% 19%;
+    --primary-foreground: 200 24% 96%;
+
+    --secondary: 200 51% 48%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 24% 96%;
+    --muted-foreground: 220 14% 46%;
+
+    --accent: 213 91% 37%;
+    --accent-foreground: 0 0% 100%;
+
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 24% 90%;
+    --input: 214 24% 90%;
+    --ring: 213 91% 37%;
+
+    --radius: 0.5rem;
+
+    /* Premium shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(215 59% 19% / 0.08);
+    --shadow-medium: 0 4px 16px -4px hsl(215 59% 19% / 0.12);
+    --shadow-strong: 0 8px 32px -8px hsl(215 59% 19% / 0.16);
+    
+    /* Premium transitions */
+    --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 215 59% 19%;
+    --foreground: 200 24% 96%;
+
+    --card: 215 54% 24%;
+    --card-foreground: 200 24% 96%;
+
+    --popover: 215 54% 24%;
+    --popover-foreground: 200 24% 96%;
+
+    --primary: 200 24% 96%;
+    --primary-foreground: 215 59% 19%;
+
+    --secondary: 200 51% 48%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 215 54% 24%;
+    --muted-foreground: 220 14% 66%;
+
+    --accent: 213 91% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 215 40% 30%;
+    --input: 215 40% 30%;
+    --ring: 213 91% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

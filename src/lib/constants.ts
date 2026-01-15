@@ -8,6 +8,13 @@ export const CONTACT_INFO = {
   googleMapsUrl: "https://maps.app.goo.gl/zSKJ9dhDnkvgTX8M7",
 };
 
+// Redes sociales
+export const SOCIAL_LINKS = {
+  facebook: "https://www.facebook.com/profile.php?id=61583446914067",
+  instagram: "https://www.instagram.com/capilart.oficial?igsh=MWZwMWRsZDFkbGZtcA==",
+  tiktok: "https://www.tiktok.com/@capilart2?_r=1&_t=ZS-932n7436MC7",
+};
+
 // Servicios principales
 export const SERVICES = {
   trasplantes: {
@@ -166,17 +173,60 @@ export const ARTAS_FEATURES = [
 
 // Equipo médico
 export const TEAM = {
-  director: {
-    name: "Dr. Omar Carreón Terrones",
-    role: "Director Médico",
-    description: "Médico experimentado con más de 15 años en el sector salud, especializado en ultrasonido, medicina estética y gestión institucional",
-    credentials: [
-      "Egresado de la Universidad Justo Sierra",
-      "Diplomados en ultrasonido y medicina estética",
-      "Maestría en gestión de instituciones de salud",
-      "Miembro de asociaciones médicas nacionales e internacionales",
-    ],
-  },
+  directors: [
+    {
+      id: "omar",
+      name: "Dr. Omar Carreón Terrones",
+      role: "Director Médico",
+      image: "/src/assets/dr-omar.jpg",
+      shortBio: "Médico experimentado con más de 15 años en el sector salud",
+      fullBio: "Médico experimentado con más de 15 años en el sector salud, especializado en ultrasonido, medicina estética y gestión institucional. Líder del equipo médico de CapilArt con amplia experiencia en técnicas FUE y medicina estética.",
+      credentials: [
+        "Egresado de la Universidad Justo Sierra",
+        "Diplomados en ultrasonido y medicina estética",
+        "Maestría en gestión de instituciones de salud",
+        "Miembro de asociaciones médicas nacionales e internacionales",
+        "Especialista en técnica FUE (Follicular Unit Extraction)",
+      ],
+      experience: "15+ años",
+      specialty: "FUE, Ultrasonido, Medicina Estética",
+    },
+    {
+      id: "ana",
+      name: "Dr. Ana Claudia Castillo Flores",
+      role: "Director Administrativo",
+      image: "/src/assets/dr-ana.jpg",
+      shortBio: "Más de 20 años de experiencia en áreas administrativas",
+      fullBio: "Contadora Pública con más de 20 años de experiencia, especializada en gestión operativa, finanzas y recursos humanos. Dirige los aspectos operacionales del negocio con enfoque en resolución de problemas y gestión institucional.",
+      credentials: [
+        "Contadora Pública",
+        "Diplomado en Habilidades Gerenciales - Universidad Anáhuac",
+        "Certificaciones en técnicas ortopédicas - Medacta Academy",
+        "Experiencia en asistencia técnica en áreas quirúrgicas",
+        "Especialista en gestión operativa y relaciones públicas",
+      ],
+      experience: "20+ años",
+      specialty: "Gestión Operativa, Finanzas, RH",
+    },
+    {
+      id: "bernardo",
+      name: "Bernardo Camacho Chavaría",
+      role: "Dirección de Finanzas",
+      image: null,
+      shortBio: "15 años de experiencia en Banca de Inversión y Finanzas Corporativas",
+      fullBio: "Economista especializado en planeación financiera y estrategia corporativa, con amplia experiencia en fusiones y adquisiciones. Experto en transferencia de tecnología y consolidación de empresas de alta innovación.",
+      credentials: [
+        "Economista - Universidad Panamericana",
+        "Posgrado en Finanzas - Universidad Panamericana",
+        "Posgrado en Gestión de Riesgos Financieros",
+        "Estudios en University of Oxford (ISIS Innovation Center)",
+        "Estudios en Wharton Business School, University of Pennsylvania",
+        "9 años como socio fundador/director en Avanza Capital",
+      ],
+      experience: "15 años",
+      specialty: "Estrategia Financiera, M&A, Innovación",
+    },
+  ],
 };
 
 // Meta información para SEO

@@ -49,6 +49,17 @@ All colors MUST be HSL.
     
     /* Premium transitions */
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Glass effect variables */
+    --glass-bg-subtle: hsl(0, 0%, 100% / 0.05);
+    --glass-bg-medium: hsl(0, 0%, 100% / 0.08);
+    --glass-bg-strong: hsl(0, 0%, 100% / 0.12);
+    --glass-border: hsl(0, 0%, 100% / 0.18);
+
+    /* Glow colors */
+    --glow-primary: hsl(213, 91%, 37% / 0.3);
+    --glow-secondary: hsl(200, 51%, 48% / 0.25);
+    --glow-accent: hsl(213, 91%, 47% / 0.35);
   }
 
   .dark {
@@ -86,5 +97,27 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* 3D Flip Card Utilities */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  /* Glassmorphism effect */
+  .glass-effect {
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
   }
 }

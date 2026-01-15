@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
+import { CONTACT_INFO } from "@/lib/constants";
 
 export default function WhatsAppButton() {
-  const whatsappNumber = "5215512345678"; // Replace with actual number
-  const message = "Hola, me gustaría obtener más información sobre los servicios de CapilArt";
-  
   const handleClick = () => {
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${CONTACT_INFO.whatsapp}?text=${encodeURIComponent(CONTACT_INFO.whatsappMessage)}`;
     window.open(url, "_blank");
   };
 
